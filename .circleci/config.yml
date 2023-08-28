@@ -24,7 +24,7 @@ jobs:
       - checkout
       - run:
           name: Run Rspec
-          command: 'bundle exec rspec'
+          command: 'gem update bundler && bundle install && bundle exec rspec'
 workflows:
   build_and_test:
     jobs:
